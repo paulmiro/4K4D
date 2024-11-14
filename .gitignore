@@ -78,3 +78,6 @@ diff*.html
 *.dmp
 *.exr
 *.bak
+
+.venv
+.direnv
