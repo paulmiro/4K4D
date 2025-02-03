@@ -1,0 +1,10 @@
+configs: configs/datasets/vci_2024_12_12_dynamic/vci_2024_12_12_dynamic.yaml 
+
+dataloader_cfg: # we see the term "dataloader" as one word?
+    dataset_cfg: &dataset_cfg
+        data_root: data/vci_2024_12_12_dynamic/scene_2
+        images_dir: images
+
+val_dataloader_cfg:
+    dataset_cfg:
+        <<: *dataset_cfg

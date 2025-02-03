@@ -1,0 +1,1 @@
+evc-test -c configs/projects/realtime4dv/rendering/4k4d_0013_01.yaml,configs/specs/eval.yaml,configs/specs/spiral.yaml,configs/specs/ibr.yaml,configs/specs/video.yaml model_cfg.sampler_cfg.render_gs=True

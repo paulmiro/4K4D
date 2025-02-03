@@ -33,7 +33,7 @@ def get_bkgd_path(bkgd_dir: str, img_path: str, cam: str):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--chkpt_path', type=str, default='/nas/home/xuzhen/weights/backgroundmattev2/torchscript_resnet101_fp32.pth')
+    parser.add_argument('--chkpt_path', type=str, default='/data/student_rohde/weights/backgroundmattev2/torchscript_resnet101_fp32.pth')
     parser.add_argument('--data_root', type=str, default='/nas/home/xuzhen/datasets/xuzhen36/talk')
     parser.add_argument('--image_dir', type=str, default='images')
     parser.add_argument('--mask_dir', type=str, default='bgmtv2')
