@@ -24,6 +24,8 @@ lpips
 plyfile
 onnxscript
 
+open3d
+
 # Stupid PyTorch CUDA extension building... Unable to ensure pytorch is installed before the building happens...
 tinycudann @ git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 # simple_knn @ git+https://gitlab.inria.fr/bkerbl/simple-knn

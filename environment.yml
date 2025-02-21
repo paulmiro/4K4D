@@ -8,18 +8,19 @@ dependencies:
   - python=3.9
   - pytorch=2.4.1
   - pytorch-cuda=12.1
+  - nvidia::cuda-python
   - torchvision
   - torchaudio
   - iopath::iopath
   - bottler::nvidiacub
   - pytorch3d::pytorch3d
   - numpy<2
-  - open3d
+  # - open3d
   - pip
   - pip:
     - -r requirements.txt
 # How to Use:
-# 0. make sure cuda 12.4 installed, in $PATH, in $LD_LIBRARY_PATH, and $CUDA_HOME is set to it
+# 0. make sure cuda 12.1 installed, in $PATH, in $LD_LIBRARY_PATH, and $CUDA_HOME is set to it
 # 1. conda env create --file environment.yml
 # 2. wait for everything to install, this may take VERY long
 # 3. conda activate 4k4d
