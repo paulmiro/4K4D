@@ -19,3 +19,9 @@ val_dataloader_cfg:
 
 viewer_cfg:
     use_window_focal: True # when initializing viewer, use window H and W to calculate focal to give a better experience
+    # init_camera_index: 10
+    camera_cfg:
+        world_up: [-1.0, 0.0, 0.0]
+        origin: [0.0, 0.05, 2.5]
+        R: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+        T: [[0.0], [0.0], [0.0]]
