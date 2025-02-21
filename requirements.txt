@@ -1,3 +1,4 @@
+#torch>=2.1.0
 tqdm
 pdbr
 h5py
@@ -5,6 +6,7 @@ yapf
 ujson
 PyGLM
 scipy
+#numpy
 addict
 PyYaml
 ipython
@@ -13,7 +15,9 @@ imageio
 PyMCubes
 pyperclip
 pyntcloud
+torchaudio
 websockets
+torchvision
 PyTurboJPEG
 tensorboard
 ruamel.yaml
