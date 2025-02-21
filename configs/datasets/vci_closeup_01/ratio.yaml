@@ -6,3 +6,8 @@ dataloader_cfg: &dataloader_cfg
         # prettier-ignore
         ratio: [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
 
+val_dataloader_cfg:
+    <<: *dataloader_cfg
+    dataset_cfg:
+        <<: *dataset_cfg
+        #frame_sample: [0, 150, 20] # eval on every 20 frames
