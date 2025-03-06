@@ -121,22 +121,6 @@ def carve_vhull(
     def chunked_reprojection(xyz, batch: dotdict):
         return reprojection(xyz, **batch)
 
-    print("xyz.shape")
-    print(xyz.shape)
-    print("msks.shape")
-    print(msks.shape)
-    
-    print("H.shape")
-    print(H.shape)
-    print("W.shape")
-    print(W.shape)
-    print("K.shape")
-    print(K.shape)
-    print("R.shape")
-    print(R.shape)
-    print("T.shape")
-    print(T.shape)
-    
     valid = chunked_reprojection(xyz, dotdict(H=H,
                                               W=W,
                                               K=K,
@@ -148,23 +132,8 @@ def carve_vhull(
                                               ))
 
     # Find valid points on the voxels
-    
-    print("valid.shape")
-    print(valid.shape)
-    print("valid.cpu().numpy()")
-    print(valid.cpu().numpy()) # [False False False ... False False False] 
     inds = valid.nonzero()
-    print("inds.shape")
-    print(inds.shape)
-    # print("inds.cpu().numpy()")
-    # print(inds.cpu().numpy())
     vhull = multi_gather(xyz, inds)  # P, 3; V -> V, 3
-    print("vhull.shape")
-    print(vhull.shape)
-    # print("vhull.cpu().numpy()")
-    # print(vhull.cpu().numpy())
-    exit(0)
-
     if remove_outlier:
         from easyvolcap.utils import fcds_utils
         vhull = fcds_utils.remove_outlier(vhull[None], K=5, std_ratio=5.0)[0]

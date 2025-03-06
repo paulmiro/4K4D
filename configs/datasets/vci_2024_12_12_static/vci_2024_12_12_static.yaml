@@ -1,8 +1,11 @@
 dataloader_cfg: # we see the term "dataloader" as one word?
     dataset_cfg: &dataset_cfg
         masks_dir: masks # {data_root}/{masks_dir,images_dir}/{camera_name}/000000{.jpg,.png}
-        #view_sample: [0, 1, 1] # start, end, step. 0 means the first view, null means the last view
+        # view_sample: [0, Null, 1] # start, end, step. 0 means the first view, null means the last view
         frame_sample: [0, 1, 1] # start, end, step. 0 means the first frame, null means the last frame
+        # bounds: [[-1.0, -1.0, 1.0], [1.5, 1.0, 3.0]]
+        # se_aligned_cameras: False
+
 
 model_cfg:
     sampler_cfg:
@@ -13,7 +16,7 @@ model_cfg:
 val_dataloader_cfg:
     dataset_cfg:
         <<: *dataset_cfg
-        frame_sample: [0, 1, 1] # make rendering faster, controls which of the views and frames to load
+        #frame_sample: [0, 1, 1] # make rendering faster, controls which of the views and frames to load
 #    sampler_cfg:
      #view_sample: [0, 1, 1] # make rendering faster, if doing IBR, change the view_sample in sampler_cfg to control which view to render
 

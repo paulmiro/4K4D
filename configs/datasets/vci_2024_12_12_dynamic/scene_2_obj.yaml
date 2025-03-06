@@ -1,0 +1,9 @@
+configs: configs/datasets/vci_2024_12_12_dynamic/scene_2.yaml
+dataloader_cfg: &dataloader_cfg
+    dataset_cfg: &dataset_cfg
+        bounds: [[-0.9052, -0.2071, 2.0384], [ 1.2298, 0.7629, 3.0034]] # !: BATCH
+
+
+val_dataloader_cfg:
+    dataset_cfg:
+        <<: *dataset_cfg

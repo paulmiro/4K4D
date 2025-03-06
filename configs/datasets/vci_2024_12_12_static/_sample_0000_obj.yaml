@@ -1,0 +1,10 @@
+configs: configs/datasets/vci_closeup_01/sample_0000.yaml
+
+dataloader_cfg: &dataloader_cfg
+    dataset_cfg: &dataset_cfg # ratio: 0.5
+        bounds: [[-0.2858, -0.2372, 2.2206], [ 0.6142, 0.3778, 2.8806]] # !: BATCH
+        
+
+val_dataloader_cfg:
+    dataset_cfg:
+        <<: *dataset_cfg

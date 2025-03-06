@@ -1,12 +1,12 @@
 configs:
     - configs/base.yaml # default arguments for the whole codebase
     - configs/models/r4dv.yaml # network model configuration
-    - configs/datasets/vci_2024_12_12_dynamic/scene_2_obj.yaml # dataset usage configuration
-    - configs/datasets/vci_2024_12_12_dynamic/ratio.yaml
+    - configs/datasets/vci_2024_12_12_static/scene_2_obj.yaml # dataset usage configuration
+    - configs/datasets/vci_2024_12_12_static/ratio.yaml
     - configs/specs/mask.yaml # specific usage configuration
     #- configs/specs/optimized.yaml # specific usage configuration
     #- configs/specs/optcam.yaml # save oprimized cameras
-    #- configs/specs/static.yaml
+    - configs/specs/static.yaml
 
 # prettier-ignore
 exp_name: {{fileBasenameNoExtension}}
