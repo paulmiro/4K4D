@@ -1,3 +1,7 @@
+# TO VCI USERS
+
+Please see [this](./VCI_README.md) README for detailed instructions
+
 # 4K4D: Real-Time 4D View Synthesis at 4K Resolution
 
 [Paper](https://drive.google.com/file/d/1Y-C6ASIB8ofvcZkyZ_Vp-a2TtbiPw1Yx/view?usp=sharing) | [Project Page](https://zju3dv.github.io/4k4d) | [arXiv](https://arxiv.org/abs/2310.11448) | [Pretrained Models](https://drive.google.com/drive/folders/1mBMsYeXawU_sF3NFyuWC1hnfrYbSfDfi?usp=sharing) | [Minimal Datasets](https://drive.google.com/drive/folders/1pH-SWwbt01raqZ74dvcOvYFxDbGGUcxu?usp=sharing) | [***EasyVolcap***](https://github.com/zju3dv/EasyVolcap)
