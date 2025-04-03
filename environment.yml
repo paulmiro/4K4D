@@ -19,9 +19,10 @@ dependencies:
   - pip
   - pip:
     - -r requirements.txt
+
 # How to Use:
 # 0. make sure cuda 12.1 installed, in $PATH, in $LD_LIBRARY_PATH, and $CUDA_HOME is set to it
 # 1. conda env create --file environment.yml
 # 2. wait for everything to install, this may take VERY long
 # 3. conda activate 4k4d
-# 4. pip install -e . --no-build-isolation --no-deps 
+# 4. pip install -e . --no-build-isolation --no-deps
